@@ -2,6 +2,8 @@
 
 ZhPhoenix is a [zen habits](https://zenhabits.net/) clone for elixir/phoenix.
 
+[![Build Status](https://travis-ci.com/rhgrieve/zh-phoenix.svg?branch=master)](https://travis-ci.com/rhgrieve/zh-phoenix)
+
 ---
 
 To start your Phoenix server:
