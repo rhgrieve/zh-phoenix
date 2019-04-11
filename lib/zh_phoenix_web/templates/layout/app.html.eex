@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ZhPhoenix · Phoenix Framework</title>
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+    <script src="https://use.typekit.net/zjb0vml.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h1><a href="/">zen habits</a> : <a id="tagline" href="/more/">breathe</a></h1>
+      </div>
+    <main role="main">
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+    <div class="all_posts"><a href="/archives/">See all posts &raquo;</a></div> 
+    <div class="subscribe">
+      <p>Join two million breath-taking readers: <a href="https://feeds.feedburner.com/zenhabits">rss</a> | <a href="/subscribe/">email</a> | <a href="https://twitter.com/zen_habits">twitter</a> | <a href="https://www.facebook.com/officialzenhabits/">facebook</a></p>
+    </div> 
+    <div class="footer">
+      <p>
+        <a href="/about/">About</a> ::
+        <a href="/uncopyright/">Uncopyright</a> ::
+        <a href="/archives/">Archives</a> ::
+        <a href="/books/">Books</a> ::
+        <a href="http://seachange.zenhabits.net/">Habit Program</a>
+      </p>
+    </div>
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>
+
+

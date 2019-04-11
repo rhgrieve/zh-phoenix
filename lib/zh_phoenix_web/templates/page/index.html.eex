@@ -1,0 +1,4 @@
+<h2><a href="https://zenhabits.net/focus-antidote/" rel="bookmark" title="Permanent Link to Focus as an Antidote for Wanting to Do Everything"><%= @post.title %></a></h2>
+<div class="post">
+  <p><%= @post.body %></p>
+</div> 

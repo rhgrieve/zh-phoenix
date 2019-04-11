@@ -1,0 +1,5 @@
+<ul>
+  <%= for post <- @posts do %>
+    <li><%= @posts.title %></li>
+  <% end %>
+</ul>
