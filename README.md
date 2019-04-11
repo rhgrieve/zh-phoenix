@@ -1,5 +1,7 @@
 # ZhPhoenix
 
+ZhPhoenix is a (https://zenhabits.net/)[zen habits] clone.
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
