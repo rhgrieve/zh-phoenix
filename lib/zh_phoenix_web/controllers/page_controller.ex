@@ -1,14 +1,14 @@
 defmodule ZhPhoenixWeb.PageController do
   use ZhPhoenixWeb, :controller
-  require Ecto.Query
+  import Ecto.Query, only: [from: 2]
   alias ZhPhoenix.Repo
   alias ZhPhoenix.Post
 
   def index(conn, _params) do
-    last = Post
+    result = Post
     |> Post.sorted
     |> Repo.one
-    render(conn, "index.html", post: last)
+    
+    render(conn, "index.html", post: result)
   end
-
 end

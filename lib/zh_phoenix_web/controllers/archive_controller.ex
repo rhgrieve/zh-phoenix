@@ -5,7 +5,8 @@ defmodule ZhPhoenixWeb.ArchiveController do
   alias ZhPhoenix.Post
 
   def index(conn, _params) do
-    all = Repo.all(Post)
+    all = Post
+    |> Repo.all
     render(conn, "index.html", posts: all)
   end
 end
